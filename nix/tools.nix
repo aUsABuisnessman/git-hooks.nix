@@ -71,6 +71,7 @@
 , ripsecrets ? placeholder "ripsecrets"
 , reuse
 , ruff ? placeholder "ruff"
+, rumdl ? placeholder "rumdl"
 , rustfmt
 , selene
 , shellcheck
@@ -171,6 +172,7 @@ in
     revive
     ripsecrets
     ruff
+    rumdl
     rustfmt
     selene
     shellcheck
@@ -230,7 +232,6 @@ in
   cabal2nix-dir = callPackage ./cabal2nix-dir { };
   hpack-dir = callPackage ./hpack-dir { };
   hunspell = callPackage ./hunspell { };
-  purty = callPackage ./purty { purty = nodePackages.purty; };
   terraform-validate = callPackage ./terraform-validate { };
   tflint = callPackage ./tflint { };
   dune-build-opam-files = callPackage ./dune-build-opam-files {
