@@ -269,6 +269,10 @@ use nix
 
 - [crystal](https://crystal-lang.org/reference/man/crystal#crystal-tool-format)
 
+### CUE
+
+- [cue-fmt](https://github.com/cue-lang/cue)
+
 ### Dart
 
 - [dart analyze](https://dart.dev/tools/dart-analyze)
@@ -391,6 +395,7 @@ use nix
 - [deadnix](https://github.com/astro/deadnix)
 - [flake-checker](https://github.com/DeterminateSystems/flake-checker)
 - [nil](https://github.com/oxalica/nil)
+- [nixf-diagnose](https://github.com/inclyc/nixf-diagnose)
 - [nixfmt](https://github.com/NixOS/nixfmt/) (supports `nixfmt` >=v1.0)
 - [nixfmt-classic](https://github.com/NixOS/nixfmt/tree/v0.6.0)
 - [nixfmt-rfc-style](https://github.com/NixOS/nixfmt/)
@@ -470,8 +475,16 @@ use nix
 
 ### Terraform
 
-- `terraform-format`: built-in formatter (using [OpenTofu](https://opentofu.org/)'s [`fmt`](https://opentofu.org/docs/cli/commands/fmt/))
-- `terraform-validate`: built-in validator (using [OpenTofu](https://opentofu.org/)'s [`validate`](https://opentofu.org/docs/cli/commands/validate/))
+- `terraform-format`: built-in formatter (using
+  [OpenTofu](https://opentofu.org/)'s
+  [`fmt`](https://opentofu.org/docs/cli/commands/fmt/) or
+  [Terraform](https://developer.hashicorp.com/terraform)'s
+  [`fmt`](https://developer.hashicorp.com/terraform/cli/commands/fmt))
+- `terraform-validate`: built-in validator (using
+  [OpenTofu](https://opentofu.org/)'s
+  [`validate`](https://opentofu.org/docs/cli/commands/validate/)
+  [Terraform](https://developer.hashicorp.com/terraform)'s
+  [`validate`](https://developer.hashicorp.com/terraform/cli/commands/validate))
 - [tflint](https://github.com/terraform-linters/tflint)
 
 ### TOML

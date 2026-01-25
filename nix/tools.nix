@@ -21,6 +21,7 @@
 , conform
 , convco
 , crystal
+, cue
 , dart
 , deadnix
 , deno
@@ -52,6 +53,7 @@
 , mdsh
 , nbstripout
 , nil
+, nixf-diagnose
 , nixfmt
 , nixfmt-classic ? placeholder "nixfmt-classic"
 , nixfmt-rfc-style ? placeholder "nixfmt-rfc-style"
@@ -132,6 +134,7 @@ in
     conform
     convco
     crystal
+    cue
     dart
     deadnix
     deno
@@ -160,6 +163,7 @@ in
     mdsh
     nbstripout
     nil
+    nixf-diagnose
     nixpkgs-fmt
     opam
     opentofu
@@ -232,7 +236,6 @@ in
   cabal2nix-dir = callPackage ./cabal2nix-dir { };
   hpack-dir = callPackage ./hpack-dir { };
   hunspell = callPackage ./hunspell { };
-  terraform-validate = callPackage ./terraform-validate { };
   tflint = callPackage ./tflint { };
   dune-build-opam-files = callPackage ./dune-build-opam-files {
     dune = dune_3;
